@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css.css">
+    <title>Traffic Prediction</title>
+</head>
+<body>
+    <h1>Shortest Path Algorithm Group 10</h1>
+    <div id="controls">
+        <label class="label" for="start">Current Location:</label>
+        <input type="text" id="start" placeholder="e.g., A">
+        <label class="label for="end">Destination:</label>
+        <input type="text" id="end" placeholder="e.g., B">
+        <button class="btn" onclick="findRoute()">Find Route</button>
+        <br>
+    </div>
+
+    <div id="popup-wrapper">
+        <div id="top-popup">Current Location: - | Destination: -</div>
+        <div id="bottom-popup">Distance: - | Time: -</div>
+        <div id="alert-popup">Traffic Congestion Detected!</div>
+    </div>
+
+    <div id="map-container">
+        <canvas id="map"></canvas>
+    </div>
+
+    <script src="java.js"></script>
+    <footer>
+        <p>&copy;DennisNyaaba productions</p>
+    </footer>
+
+    <video autoplay muted loop id="myVideo">
+		<source src="gps.mp" type="video/mp4">
+    </video>
+</body>
+</html>
